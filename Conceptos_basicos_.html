@@ -5,37 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina</title>
 </head>
+<style>
+    table, th, td{
+        border: 1px solid black;
+        width: 500px;
+    }
+</style>
+
 <body>
-    <form>
-        <label for="nombre" style="color: rgb(160, 95, 95);">Nombre:</label>
-        <input type="text"id="nombre" name="nombre" placeholder="Ingrese su nombre" style="background-color: skyblue;"/><br>
+    <!-- Etiqueta form: Define un formulario HTML -->
+        <form action="/formulario" method="POST">
+        <label for="nombre" style="color: rgb(160, 95, 95);">Nombre:</label><!-- Etiqueta label: Define una etiqueta para el control del formulario con el id 'nombre' -->
+        <input value="Fernanfloo" type="text"id="nombre" name="nombre" placeholder="Ingrese su nombre" style="background-color:rgb(135, 235, 150);"/><br><!-- Etiqueta input: Campo de texto para ingresar el nombre -->
         <br>
-        <label for="apellidos" style="color: rgb(120, 95, 160);">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese su apellido" style="background-color: skyblue;"/><br>
+        <label for="apellidos" style="color: rgb(120, 95, 160);">Apellidos:</label><!-- Etiqueta label: Define una etiqueta para el control del formulario con el id 'apellidos' -->
+        <input value="youtuber"type="text" id="apellidos" name="apellidos" placeholder="Ingrese su apellido" style="background-color: rgb(135, 235, 150);"/><br><!-- Etiqueta input: Campo de texto para ingresar el apellido -->
         <br>
-        <label for="Pais" style="color: rgb(157, 160, 95);">Pais:</label>
-        <input type="text"id="Pais" name="Pais" placeholder="Ingrese su Pais" style="background-color: skyblue;"/><br>
+        <label for="Pais" style="color: rgb(157, 160, 95);">Pais:</label><!-- Etiqueta label: Define una etiqueta para el control del formulario con el id 'Pais' -->
+        <input value="El salvador" type="text"id="Pais" name="Pais" placeholder="Ingrese su Pais" style="background-color: rgb(135, 235, 150);"/><br><!-- Etiqueta input: Campo de texto para ingresar el Pais -->
         <br>
-        <label for="ciudad" style="color: rgb(160, 122, 95);">Ciudad:</label>
-        <input type="text"id="ciudad" name="ciudad" placeholder="Ingrese su  Ciudad" style="background-color: skyblue;"/><br>
+        <label for="ciudad" style="color: rgb(160, 122, 95);">Ciudad:</label><!-- Etiqueta label: Define una etiqueta para el control del formulario con el id 'ciudad' -->
+        <input value="Mexico" type="text"id="ciudad" name="ciudad" placeholder="Ingrese su Ciudad" style="background-color: rgb(135, 235, 150);"/><br><!-- Etiqueta input: Campo de texto para ingresar el ciudad -->
         <br>
-        <textarea style="background-color: aqua;"id="comentario" name="comentario"placeholder="Ingrese comentario"></textarea>
+        <textarea cols="20" rows="1" style="background-color: rgb(246, 255, 0);"id="comentario" name="comentario"placeholder="Ingrese comentario">Este es un texto por defecto</textarea><!-- Etiqueta textarea: Campo de texto para ingresar comentarios -->
         <br>
-        <button type="button" style="color: white; background-color: black;">Registrarse</button>
+        <button style="background-color: black; color: aliceblue;" type="submit">Enviar</button>
+        <button style="background-color: black; color: aliceblue;" type="reset">Reseteo</button>
+        <button style="background-color: black; color: aliceblue;" type="button">Enviar</button>
+        <hr>
+
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr>
+                <td>Elias</td>
+                <td>Humire</td>
+                <td>Tacna</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Humire</td>
+                <td>Tacna</td>
+            </tr>
+        </table>
+
+
+        <hr>
+        <h1 style="color: rgb(127, 161, 255);">Lenguajes de programacion</h1>
+        <ul> <!--Esta etiqueta muestra una lista no ordenanda--> 
+            <li>PHP</li>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>C#</li>
+            <li>C++</li>
+        </ul>
+        <hr>
+        <h1 style="color: brown;">Cursos</h1>
+        <ol><!--Esta etiqueta muestra una lista ordenanda--> 
+            <li>Matematica</li>
+            <li>Comunicacion</li>
+            <li>CTA</li>
+            <li>Historia y Geografia</li>
+            <li>Algebra</li>
+        </ol>
     </form>
-    <h1>Kevin Celestino</h1>
-<p><span style="color: blue;">El dia de hoy me encuentro estudiando y practicando</span> fundamentos basicos
+    <hr><!-- Etiqueta hr: Define una línea horizontal -->
+    <h1 style="color: rgb(255, 195, 127);">Curso de HTML</h1> <!-- Etiqueta h1: Define un encabezado de nivel 1 -->
+<p><span style="color: blue;">Estos son las etiquetas y </span> fundamentos basicos<!-- Etiqueta p: Define un párrafo. Etiqueta span: Define una sección dentro de un párrafo con estilo azul -->
     del curso HTML 
 </p>
-   <hr>
-   <h1>Humire Chalco</h1>
+   <hr><!-- Etiqueta hr: Define una línea horizontal -->
+   <h1 style="color: rgb(255, 0, 0);">Conceptos basicos</h1> <!-- Etiqueta h1: Define un encabezado de nivel 1 -->
    <p>
-    Son mis apellidos <span style="color:orange">Dragon ball super</span> es un
-    <br>anime de television
+    Este es el nombre de un <span style="color:orange">Anime de television</span> Dragon ball super creado por <br> Akira toriyama</p> <!-- Etiqueta p: Define un párrafo. Etiqueta span: Define una sección dentro de un párrafo con estilo naranja. Etiqueta br: Define un salto de línea -->
    </p>
 
-   <a href="https://www.youtube.com/"> Ir a youtube</a>
-   <img src="img/anonymous.jpg" width="400"/>
+   <a href="https://www.youtube.com/"> Ir a youtube</a><!-- Etiqueta a: Define un enlace a otra página web -->
+   <img src="img/anonymous.jpg" width="400"/><!-- Etiqueta img: Define una imagen con una ruta y un ancho específicos -->
 
 </body>
 </html>
